@@ -13,21 +13,27 @@ def run():
     '''
     Task 14: Call the function startup from the module utils.
     '''
-    startup()
+
+  startup()
 
     '''
     Task 15: Populate the pokedex list from pokedex.csv file, using an appropriate 
     function from utils module.
     '''
-    pokedex=load_pokes("pokedex.csv")
 
-    while True:
+  pokedex=load_pokes("pokedex.csv")
+run()    
+
+
+  while True:
         '''
         Task 16: Using an appropriate function in the module utils, display
         a menu of options for the different operations that can be performed on the data.
         Assign the selected option to a suitable local variable
         '''
+
       option=options
+
         
         '''
         Task 17: Check if the user selected the option to check Pokemon. If so,
@@ -35,6 +41,7 @@ def run():
         - Use the appropriate function in the module utils to display a submenu 
         of suitable options.
         '''
+
 
       if option == 1:
         opt= check_poke()
@@ -46,12 +53,14 @@ def run():
             print("Invalid option")  
 
 
+
         '''
             Task 18: If user chooses to show pokemon by name, then diplay all 
             information about this particular pokemon. If user chooses to show pokemon
             by type, display all pokemon of that type (full details)
 
-        '''
+    
+    '''
       elif option == 2:
         opt2= add_poke
         if opt2 == 1:
@@ -64,6 +73,7 @@ def run():
           show_all(pokedex)  
       elif option == 6:
           break   
+
         '''
         Task 19: Check if user selected option to add pokemon. If so, then do the following:
         - Use the appropriate function in the module utils to display a submenu of suitable options.
